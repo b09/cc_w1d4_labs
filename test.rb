@@ -59,14 +59,17 @@
 
 # p @people[][:favourites][:things_to_eat]
 
+no_pals = []
+# def no_friends(people)
+#   no_pals = []
+  for person in @people
+    no_pals << person[:name] if person[:friends] == []
 
-def no_friends(people)
-  no_pals = []
-  for person in people
-    no_pals << person[:name]
-    if (person[:friends] == nil)
+  
+    # if (person[:friends] == nil)
   end
   p no_pals
-end
-
-no_friends(@people)
+#   p no_pals
+# end
+#
+# no_friends(@people)

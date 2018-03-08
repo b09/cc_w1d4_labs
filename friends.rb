@@ -42,7 +42,7 @@ end
 def no_friends(people)
   no_pals = []
   for person in people
-    no_pals << person[:name] if (person[:friends] == nil)
+    no_pals << person[:name] if person[:friends] == []
   end
   return no_pals
 end
