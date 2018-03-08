@@ -13,3 +13,7 @@ end
 def add_new_friend(person, new_friend)
     person[:friends] << new_friend
 end
+
+def remove_new_friend(person)
+    person[:friends].pop
+end
