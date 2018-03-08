@@ -7,7 +7,9 @@ def return_fave_tv_show(person)
 end
 
 def check_fav_food(person, food)
- if person[:favourites][:things_to_eat] == food
-     return true
-   end
+  return true if person[:favourites][:things_to_eat] == food
+end
+
+def add_new_friend(person, new_friend)
+    person[:friends] << new_friend
 end
